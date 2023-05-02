@@ -1,0 +1,50 @@
+*{
+  margin: 0 auto;
+  background-color: var(--purple);
+}
+
+:root{
+  --beige:#f8b195;
+  --peach:#f67280;
+  --pink: #c06c84;
+  --purple: #6c5b7b;
+  --blue: #355c7d;
+}
+
+.navbar{
+  background-color: var(--blue);
+  color: var(--peach);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.aboutme{
+  padding-left: 35%;
+}
+
+.aboutme__figure{
+  height: 120px;
+  width: 100px;
+  margin-top: 40px;
+  align-items: center;
+  display: inline-block;
+}
+
+figure img{
+  border-radius: 6%;
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.288) ;
+}
+
+.aboutme__work{
+  display: inline-block;
+  margin-left: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--beige);
+  text-shadow: 1px 1px black;
+}
