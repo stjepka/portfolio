@@ -1,6 +1,5 @@
 *{
   margin: 0 auto;
-  background-color: var(--purple);
 }
 
 :root{
@@ -9,6 +8,11 @@
   --pink: #c06c84;
   --purple: #6c5b7b;
   --blue: #355c7d;
+}
+
+body{
+  height: 100vh;
+  background-image: linear-gradient(to top left, var(--blue), var(--purple));
 }
 
 .navbar{
@@ -23,16 +27,21 @@
 }
 
 .aboutme{
-  padding-left: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .aboutme__figure{
-  height: 120px;
-  width: 100px;
+  height: 200px;
+  width: 150px;
   margin-top: 40px;
-  align-items: center;
   display: inline-block;
 }
+
+
 
 figure img{
   border-radius: 6%;
@@ -41,10 +50,21 @@ figure img{
   box-shadow: 3px 3px rgba(0, 0, 0, 0.288) ;
 }
 
+
+
+.aboutme__figure:hover + .aboutme__work{
+  display: block;
+}
+
 .aboutme__work{
-  display: inline-block;
+  display: none;
   margin-left: 20px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: var(--beige);
   text-shadow: 1px 1px black;
+}
+
+.aboutme__figure:hover{
+  transform: translateX(-200px) scale(0.6, 0.6);
+  transition: transform 1s; 
 }

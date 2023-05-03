@@ -3,9 +3,6 @@ import Image from "./pictures/ivana.jpg";
 import AboutMe from "./AboutMe";
 
 const Main = () => {
-  const [noText, setText] = useState(false);
-  
-
   return(
     <>
     <article class="aboutme">
@@ -15,8 +12,7 @@ const Main = () => {
       alt="Ivana Stjepanovic"
       />
     </figure>
-    <button onMouseOver={() => setText(!noText)}>See what I like</button>
-    {noText && <AboutMe />}
+    <AboutMe />
     </article>
     </>
   )
