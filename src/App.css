@@ -54,6 +54,7 @@ figure img{
 
 .aboutme__figure:hover + .aboutme__work{
   display: block;
+
 }
 
 .aboutme__work{
@@ -64,7 +65,3 @@ figure img{
   text-shadow: 1px 1px black;
 }
 
-.aboutme__figure:hover{
-  transform: translateX(-200px) scale(0.6, 0.6);
-  transition: transform 1s; 
-}

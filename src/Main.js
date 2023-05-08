@@ -12,7 +12,12 @@ const Main = () => {
       alt="Ivana Stjepanovic"
       />
     </figure>
-    <AboutMe />
+    <AboutMe 
+    one="Natural Language processing" 
+    two="Front-end development" 
+    three="Digital Marketing" 
+    four="Market Research" 
+    five="Editing & Localization"/>
     </article>
     </>
   )
